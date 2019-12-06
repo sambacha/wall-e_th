@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/menu_switch_network"
+            android:title="@string/nav_drawer_switch_network"
+            android:icon="@drawable/ic_assistant_photo"/>
+
+    <item
+            android:id="@+id/menu_accounts"
+            android:title="@string/nav_drawer_accounts"
+            android:icon="@drawable/ic_group_black_24dp"/>
+
+    <item
+            android:id="@+id/menu_keys"
+            android:title="@string/nav_drawer_keys"
+            android:icon="@drawable/ic_key_black"/>
+
+    <item
+            android:id="@+id/menu_settings"
+            android:title="@string/nav_drawer_settings"
+            android:icon="@drawable/ic_action_settings"/>
+
+    <item
+            android:id="@+id/menu_offline_transaction"
+            android:title="Offline Transaction"
+            android:icon="@drawable/ic_enhanced_encryption_black_24dp"/>
+
+    <item
+            android:id="@+id/menu_debug"
+            android:title="Debug"
+            android:icon="@drawable/ic_adb_black_24dp"/>
+
+    <item
+            android:id="@+id/menu_security"
+            android:title="Security Information"
+            android:icon="@drawable/ic_security_black_24dp"/>
+
+</menu>

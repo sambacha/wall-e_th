@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="org.walleth">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera"
+                  android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"
+                  android:required="false"/>
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:name=".App"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+
+        <service android:name="org.walleth.core.TransactionNotificationService"/>
+
+        <activity
+            android:name="org.walleth.activities.qrscan.QRScanActivity"
+            android:theme="@style/AppThemeNoActionbar"/>
+
+        <activity android:name="org.walleth.activities.SwitchNetworkActivity"/>
+        <activity android:name="org.walleth.activities.RequestActivity"/>
+        <activity android:name=".activities.FullscreenQRCodeActivity"/>
+        <activity android:name="org.walleth.activities.InfoActivity"/>
+        <activity android:name="org.walleth.activities.DebugWallethActivity"/>
+        <activity android:name="org.walleth.activities.trezor.TrezorSignTransactionActivity"/>
+        <activity android:name="org.walleth.activities.trezor.TrezorGetAddressActivity"/>
+        <activity android:name="org.walleth.activities.ImportActivity"/>
+        <activity android:name="org.walleth.activities.ExportKeyActivity"/>
+        <activity android:name="org.walleth.activities.KeysActivity"/>
+        <activity android:name="org.walleth.activities.EditAccountActivity"/>
+        <activity android:name="org.walleth.activities.CreateAccountActivity"/>
+        <activity android:name="org.walleth.activities.SelectReferenceActivity"/>
+        <activity android:name="org.walleth.activities.ParitySignerQRActivity"/>
+
+        <activity android:name="org.walleth.activities.SelectTokenActivity"/>
+        <activity android:name="org.walleth.activities.CreateTokenDefinitionActivity"/>
+        <activity android:name="org.walleth.activities.SecurityInfoActivity"/>
+
+        <activity android:name="org.walleth.activities.AddressBookActivity"/>
+        <activity android:name="org.walleth.activities.SwitchAccountActivity"/>
+        <activity android:name="org.walleth.activities.PreferenceActivity"/>
+        <activity android:name="org.walleth.activities.ViewTransactionActivity"/>
+        <activity android:name="org.walleth.activities.CreateTransactionActivity"/>
+        <activity android:name="org.walleth.activities.IntentHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data
+                        android:scheme="ethereum"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.walleth.activities.MainActivity"
+                  android:theme="@style/AppThemeNoActionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts"
+                       android:resource="@xml/shortcuts" />
+        </activity>
+
+        <activity
+                android:name=".activities.OpenSourceLicenseDisplayActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme="org.walleth.licenses" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="org.walleth.activities.OfflineTransactionActivity"
+                  android:windowSoftInputMode="adjustResize"/>
+    </application>
+
+</manifest>

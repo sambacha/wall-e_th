@@ -1,0 +1,232 @@
+<resources>
+    <string name="app_name">WallΞTH</string>
+    <string name="welcome">Welcome,\n\n there was no account for you yet - so one was created. Note - this one is not secured with any password for easy use - so only use it as a hot walleth for a few beverages. Also be aware that this alpha operates currently on the rinkeby network only.</string>
+    <string name="request_transaction_subtitle">Request Transaction</string>
+    <string name="edit_account_subtitle">Edit Account</string>
+    <string name="switch_account_subtitle">Switch Account</string>
+    <string name="address_book_subtitle">Address book</string>
+    <string name="transaction_subtitle">Transaction details</string>
+
+    <string name="scan_instructions">Center a QR code inside the frame.</string>
+    <string name="no_camera_permission">WallΞTH does not have permission to access the camera.</string>
+
+    <string name="request_subtitle">Request</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="info_text"><![CDATA[
+This is a native Android <a href="http://ethereum.org">Ethereum</a> wallet.
+<br/><br/>
+WallΞTH is trying to be as decentralized as possible. Hence it is offering a light. But light clients are still in early development. We cannot be fully decentralized *yet*. For getting the exchange rates for (fiat) references we are querying <a href="https://www.cryptocompare.com">cryptocompare</> and to get transactions we use the great <a href="https://etherscan.io">etherscan.io</a> service. The app should work if these services are down for some reason - but you might miss some features like up to date exchange rates. As soon as it is possible to get these things in a decentralized manner we will try to use it.
+<br/><br/>
+Our wonderful Icon is from <a href="https://cookicons.co">Michael Cook</a>.
+<br/><br/>
+<div>The base for the  send and receive icons are made by <a href="https://www.flaticon.com/authors/catalin-fertu" title="Catalin Fertu">Catalin Fertu</a> from <a href="https://www.flaticon.com/" title="Flaticon">flaticon.com</a>
+<br/><br/>
+The light client comes via the go-ethereum project. Big shout out to <a href="https://github.com/karalabe">karalabe</a>, <a href="https://github.com/holiman">holiman</a>, <a href="https://github.com/fjl">fjl</a>, <a href="https://github.com/zsfelfoldi">zsfelfoldi</a> and <a href="https://github.com/obscuren">obscuren</a> here - awesome work!
+<br/><br/>
+Be aware that this is an alpha and there will be bugs.
+<br/><br/>
+The project was started by <a href="http://ligi.de">ligi</a> as this is not only needed as a wallet - but also as a building block for the <a href="http://espass.it">espass</a> project
+<br/><br/>
+The project is libre software (aka FOSS/free/open source) - you can find code and open issues on the <a href="https://github.com/walleth">WallΞTH GitHub Organisation</a>
+<br/><br/>
+Find the <a href="org.walleth.licenses://intentjump"> opensource licenses here.</a>
+<br/><br/>
+Please have a great time with this app and we are happy about feedback, donations, pull-requests ..-)
+<br/><br/>
+The ideal place for feedback is our sub-reddit <a href="https://www.reddit.com/r/walleth">https://www.reddit.com/r/walleth</a>
+You can find the source <a href="https://github.com/walleth">on github</a> and more information on <a href="http://walleth.org">the Blog.</a>
+]]></string>
+    <string name="qr_code">QR-Code</string>
+    <string name="text_extract_funds">You can use this QR-Code to request a transaction:</string>
+
+    <string name="import_json_subtitle">Import Key</string>
+    <string name="export_account_subtitle">Export key</string>
+
+    <string name="request_hint_test_net"><![CDATA[
+You might share this address with the hashtag <a href="https://twitter.com/search?q=%23walleth">#walleth</a> on social media to get test ether.
+<br/><a href="http://ligi.de">LIGI</a> will monitor twitter and has some test-ether collected since the launch of <a href="http://www.rinkeby.io">rinkeby</a>.
+<br/>Also you can pass on the test ether you got to users you see using this hashtag and exercise transactions this way.
+]]>
+</string>
+
+    <string name="request_hint_no_test_net"><![CDATA[
+Unfortunately there is no faucet for the test-net. So if you want to try out things - better use the test-net..
+]]>
+    </string>
+    <array name="day_night">
+        <item>Day</item>
+        <item>Night</item>
+        <item>Auto</item>
+    </array>
+
+    <array name="scan_hex_choices">
+        <item>Add to AddressBook</item>
+        <item>Perform transaction</item>
+        <item>Add token definition</item>
+    </array>
+
+
+    <string name="day_or_night">Day or Night</string>
+    <string name="day_or_night_summary">There is a light and a dark theme</string>
+    <string name="dialog_title_success">Success</string>
+    <string name="dialog_title_error">Error</string>
+
+    <string name="select_fiat_reference">Select (Fiat) Reference</string>
+    <string name="select_token">Select Token</string>
+    <string name="create_account_subtitle">Create Account</string>
+    <string name="open_in_etherscan">Open in EtherScan</string>
+    <string name="empty_view">This account was just created for you Hence it has no transactions/value yet You could now press the green button to send value to this account Or import an existing account You can find functions like these in the drawer to your left</string>
+    <string name="transaction_to_label">To:</string>
+    <string name="transaction_from_label">From:</string>
+    <string name="alert_problem_title">Problem</string>
+    <string name="address_not_valid">The address is not valid</string>
+    <string name="input_hint_address">Address</string>
+    <string name="input_hint_notes">notes</string>
+    <string name="input_hint_account_name">account name</string>
+    <string name="please_enter_name">Please enter a name</string>
+    <string name="info">Info</string>
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+    <string name="print">Print</string>
+    <string name="paper_wallet_title">WallΞTH Paper Ethereum Wallet</string>
+    <string name="paper_wallet_text">This is the private key for your Ethereum account - store it safely and remember the corresponding password.</string>
+    <string name="imported_key_alert_message">Imported %s</string>
+    <string name="imported_key_default_entry_name">Imported</string>
+    <string name="imported_key_entry_note">Imported on %s</string>
+    <string name="key_input_key_hint">The key</string>
+    <string name="key_import_password_input_hint">Password</string>
+    <string name="key_import_account_name_input_hint">Account name</string>
+    <string name="scan_not_interpreted_error_message">Could not interpret your intent for the scan. Currently only support: ERC67, Address, ECDSA-Key, JSON(UTC-) Key</string>
+    <string name="select_action_messagebox_title">Select Action</string>
+    <string name="saf_activity_not_found_problem">No App found to handle ACTION_OPEN_DOCUMENT - please report this as a problem to your phone-/ROM-provider</string>
+    <string name="transaction_to_use_hint">Transaction to use</string>
+    <string name="no_funds_after_fee">No funds left with the given fee</string>
+    <string name="nav_drawer_switch_network">Switch network</string>
+    <string name="nav_drawer_edit_account">Edit account</string>
+    <string name="nav_drawer_accounts">Accounts</string>
+    <string name="nav_drawer_keys">Keys</string>
+    <string name="nav_drawer_export_key">Export key</string>
+    <string name="nav_drawer_import_key">Import key</string>
+    <string name="nav_drawer_settings">Settings</string>
+    <string name="nonce_invalid">we need a nonce</string>
+    <string name="connect_trezor_message"><![CDATA[Connect your TREZOR.<br/>If you have none: <a href=\"https://trezor.io/?a=walleth.org\">get one</a>]]></string>
+    <string name="activity_subtitle_get_trezor_address">Get TREZOR Address</string>
+    <string name="activity_subtitle_sign_with_trezor">Sign with TREZOR</string>
+    <string name="signed_rlp_header_text">Signed RLP</string>
+    <string name="unsigned_rlp_header_text">Scan this with the device that has the key:</string>
+    <string name="snackbar_after_address_copy">Address copied to clipboard</string>
+    <string name="ethereum_address">Ethereum Address</string>
+    <string name="onboarding_warning_message">Please note this is application is in alpha. Please do not work with important accounts and a lot of ether yet!</string>
+    <string name="onboarding_warning_title">Special Awareness</string>
+    <string name="onboard_showcase_message">Please click the arrow to fund this account</string>
+    <string name="deleted_account_snack">Deleted Account</string>
+    <string name="deleted_token_snack">Deleted Token %s</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="clipboard_copy_name">Ethereum Address</string>
+    <string name="undo">UNDO</string>
+    <string name="undelete_all">Undelete all</string>
+    <string name="search">Search</string>
+    <string name="decimals_in_list">Decimals: %s</string>
+    <string name="relay_transaction">Relay transaction</string>
+    <string name="input_not_valid_title">Problem with input</string>
+    <string name="input_not_valid_message">Input not valid. Reason: %s</string>
+    <string name="no_address_selected">no address selected</string>
+    <string name="create_transaction_on_network_subtitle">Transfer on %s</string>
+    <string name="create_tx_error_address_must_be_specified">address must be specified</string>
+    <string name="create_tx_error_amount_must_be_specified">amount must be specified</string>
+    <string name="create_tx_error_not_enough_funds">Not enough funds for this transaction with the given amount plus fee</string>
+    <string name="create_tx_error_invalid_erc67_msg">%s not valid ERC67</string>
+    <string name="create_tx_error_invalid_erc67_title">Invalid ERC67</string>
+    <string name="create_tx_error_invalid_address">%s is not a valid Ethereum-Address</string>
+    <string name="default_account_name">Default Account</string>
+    <string name="new_address_note">This Account was created for you when WallΞTH started for the first time</string>
+    <string name="request_funds_add_value">Add Value</string>
+    <string name="request_funds_value_hint">Value</string>
+    <string name="trezor_custom_derivation_path">Custom</string>
+    <string name="trezor_account">%d.Account</string>
+    <string name="trezor_select_address">Select Address</string>
+    <string name="trezor_no_valid_input">No valid input</string>
+    <string name="geth_service_notification_title">WallETH Geth</string>
+    <string name="geth_service_notification_content_text">light client running on %1$s</string>
+    <string name="geth_service_notification_channel_description">View and Stop Geth Service</string>
+    <string name="no_key_for_sending_account">No key for sending account</string>
+    <string name="create_transaction_to_label">To:</string>
+    <string name="create_tx_please_specify_amount">Please specify the amount</string>
+    <string name="create_tx_show_advanced_options">Show Advanced Options</string>
+    <string name="create_tx_gas_price">Gas Price</string>
+    <string name="create_tx_amount">Amount:</string>
+    <string name="create_tx_fee">Fee:</string>
+    <string name="create_tx_gas_limit">Gas Limit</string>
+    <string name="create_tx_nonce">nonce</string>
+    <string name="settings_currently">Currently: %s</string>
+    <string name="settings_please_wait">Please wait</string>
+    <string name="trezor_please_enter_your_passphrase">Please enter your passphrase</string>
+    <string name="trezor_reported_different_address">TREZOR reported different source Address. %1$s is not %2$s</string>
+    <string name="select_reference_activity_select_reference">Select reference</string>
+    <string name="select_reference_activity_add_reference">Add Reference</string>
+    <string name="select_token_activity_select_token">Select token</string>
+    <string name="switch_network_activity_adding_not_yet_supported">adding new networks not yet implemented</string>
+    <string name="keys_only">Keys only</string>
+    <string name="precise_amount_alert_title">Precise amount</string>
+    <string name="create_token_activity_subtitle">Create Token</string>
+    <string name="create_token_activity_error_invalid_amount_of_decimals">Please enter a valid amount of decimals</string>
+    <string name="create_token_activity_error_invalid_name">Please enter a valid name</string>
+    <string name="create_token_activity_error_invalid_address">Please enter a valid address</string>
+    <string name="create_tx_no_address">Address not given</string>
+    <string name="main_activity_no_data">No data</string>
+    <string name="main_activity_block">Block %d</string>
+    <string name="starred_only">Starred only</string>
+    <string name="transact">Transact</string>
+    <string name="transact_disabled">Transact disabled</string>
+    <string name="scan">Scan</string>
+    <string name="scan_disabled">Scan disabled</string>
+    <string name="network_subtitle">Networks</string>
+    <string name="network_details">network details</string>
+    <string name="network_stats">network stats</string>
+    <string name="warning_dynamic_length_params_unsupported">Dynamic length parameters are currently not supported (parameter %1$s - %2$s)</string>
+    <string name="warning_problem_with_parameter">Problem with parameter (parameter %1$s - %2$s = %3$s)</string>
+    <string name="warning_invalid_param">Invalid parameter detected (parameter %1$s - %2$s)</string>
+    <string name="info_activity_subtitle">Version %s</string>
+    <string name="trezor_please_enter_your_pin">Please enter your PIN</string>
+    <string name="warning_not_a_valid_address">not a valid address: %s</string>
+    <string name="title_invalid_address_alert">invalid_address</string>
+    <string name="please_connect_your_trezor">Please connect your TREZOR</string>
+    <string name="create_transaction_from_label">From:</string>
+    <string name="create_transaction_function_label">Function:</string>
+    <string name="unknown_token">Unknown Token</string>
+    <string name="add_token_manually">Please add token with address %1$s manually.</string>
+    <string name="no_token_address">Token address is missing!</string>
+    <string name="settings_start_light_summary">This makes your phone warm, might crash and use a lot of CPU cycles and bandwidth - but also gives you the warm feeling of helping decentralisation by finding issues in this area.</string>
+    <string name="settings_start_light_title">Start Geth Light Client</string>
+    <string name="settings_stats_name">Your name in the stats</string>
+    <string name="trezor_pin_invalid">Pin invalid</string>
+    <string name="store_gas_price">Store the current gas price as default?</string>
+    <string name="save">Save</string>
+    <string name="no">No</string>
+    <string name="default_gas_price">Default gas price for %1$s</string>
+    <string name="paste_from_clipboard">Copied Ethereum details detected</string>
+    <string name="paste_from_clipboard_action">Use it</string>
+    <string name="copied_string_warning_title">Warning</string>
+    <string name="copied_string_warning_message">Copied details could have been tampered with by other apps. Please verify the details!</string>
+    <string name="input_hint_token_name">Token name</string>
+    <string name="input_hint_token_address">Token address</string>
+    <string name="input_hint_decimals">Decimals</string>
+    <string name="input_hint_export_password">Export password</string>
+    <string name="input_hint_confirm_export_password">Confirm export password</string>
+    <string name="error_confirmation_does_not_match_password">Confirmation does not match Password</string>
+    <string name="show_qr_code">show QR code</string>
+    <string name="input_hint_reference_to_add">Reference to add</string>
+    <string name="input_hint_derivation_path">Derivation path</string>
+    <string name="create_tx_negative_token_balance">You have less tokens than you want to send. However, some tokens allow to do that. Do you want to continue?</string>
+    <string name="create_tx_zero_amount">The amount is set to ZERO ether. Do you want to continue?</string>
+    <string name="function_call">Function call:</string>
+    <string name="or">or</string>
+    <string name="trezor_not_initialized">TREZOR not initialized. Please use the TREZOR manager to initialize.</string>
+    <string name="process_error">Process Error %s</string>
+    <string name="security_info">Security Information</string>
+    <string name="click_for_details">Click for details</string>
+    <string name="activity_subtitle_oss_license">OSS licenses information</string>
+    <string name="alert_network_unsupported_title">Network invalid</string>
+    <string name="alert_network_unsupported_message">WallETH is not supporting network with chainId %d</string>
+</resources>

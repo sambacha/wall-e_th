@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="4dp"
+        app:cardMaxElevation="8dp">
+
+
+    <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/transaction_state_indicator"
+            style="@style/indicator_icon"
+            app:srcCompat="@drawable/ic_lock_open_black_24dp"/>
+
+    <LinearLayout
+            android:padding="8dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <org.walleth.ui.ValueViewSmall
+                android:id="@+id/difference"
+                app:showPrecise="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/transaction_err"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="12dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/date"
+                  android:layout_gravity="center_horizontal"
+                  android:textSize="12dp"
+                  android:fontFamily="sans-serif-condensed"/>
+
+
+        <TextView
+                android:id="@+id/address"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="12dp"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
